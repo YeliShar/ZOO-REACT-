@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+	<title>Filter Zoo</title>
+</head>
+<body>
+	<div id="container"></div>
+
+	<script src="https://unpkg.com/react@15/dist/react.js"></script> 
+	<script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
+	<link rel='stylesheet' href='filterAnimal.css'>
+	<script src="filterAnimal.js"></script>
+
+	<script>
+
+	var nameDivText = 'Search for Animals';
+	var animalsArr = [ 
+		{text: 'panda', code: 1,},
+		{text: 'lion', code: 2,},
+		{text: 'turtle', code: 3,},
+		{text: 'elephant', code: 4,},
+		{text: 'parrot', code: 5,},
+		{text: 'fish', code: 6,},
+		{text: 'panther', code: 7,},
+		{text: 'flamingo', code: 8,},
+	]; 
+	var animalText='';
+
+	ReactDOM.render(
+		React.createElement(filterAnimal,{nameDivText, animalsarrprop: animalsArr, animalText: animalText, }), 
+		document.getElementById('container') 
+		);
+	</script>
+</body>

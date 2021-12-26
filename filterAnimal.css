@@ -1,0 +1,62 @@
+html {
+	background: url(http://3.bp.blogspot.com/_N_mOB63qPaE/TTbeHpfw6tI/AAAAAAAAR3E/NhBGi8IkqRY/s1600/Big-cat-Wallpaper.jpg) no-repeat;
+	-moz-background-size: 100%; 
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	color: #fff;
+	font-family: 'Playfair Display', serif;
+	font-size: 5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+body > div {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	width: 90%;
+}
+.animalsPlace, .animalsSearch, input, select, select > option  {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+	margin: 20px;
+	align-items: center;
+}
+.animalsPlace, .animalsSearch {
+	height: 70vh;
+}
+input {
+	height: 5vh;
+}
+input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+select {
+	overflow-y: auto;
+}
+select > option  {
+	margin: 0;
+	margin-top: 5px;
+}
+button {
+	width: 10vh;
+	height: 5vh;
+}
+.label {
+	margin-top: -15px;
+	font-size: 2vh;
+}
